@@ -78,7 +78,7 @@ final class TestLambdaUtilities {
     void testFill() {
         final var random = new Random();
         final var map = LambdaUtilities.fill(
-            Map.of(
+                Map.of(
                 "p1", Optional.of(1),
                 "p2", Optional.of(2),
                 "n1", Optional.empty(),
