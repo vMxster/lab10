@@ -46,13 +46,13 @@ public final class DrawNumberApp implements DrawNumberViewObserver {
                 final String line = fileRead.readLine();
                 final StringTokenizer stringTokenized = new StringTokenizer(line, ": ");
                 final String stringToken = stringTokenized.nextToken();
-                if (stringToken.trim().equals("minimum")) {
+                if (stringToken.equals("minimum")) {
                     this.min = Integer.parseInt(stringTokenized.nextToken());
                 }
-                if (stringToken.trim().equals("maximum")) {
+                if (stringToken.equals("maximum")) {
                    this.max = Integer.parseInt(stringTokenized.nextToken());
                 }
-                if (stringToken.trim().equals("attempts")) {
+                if (stringToken.equals("attempts")) {
                     this.attempts = Integer.parseInt(stringTokenized.nextToken());
                 }
             }
